@@ -1,6 +1,6 @@
 # flake8: noqa
 CONFLUENCE_PAGE_CREATE_PROMPT = """
-    This tool is a wrapper around atlassian-python-api's Jira issue_create API, useful when you need to create a Jira issue. 
+    This tool is a wrapper around atlassian-python-api's Confluence create_page API, useful when you need to create a confluence page. 
     The input to this tool is a dictionary specifying the fields of the Jira issue, and will be passed into atlassian-python-api's Jira `issue_create` function.
     For example, to create a low priority task called "test issue" with description "test description", you would pass in the following dictionary: 
     {{"summary": "test issue", "description": "test description", "issuetype": {{"name": "Task"}}, "priority": {{"name": "Low"}}}}
