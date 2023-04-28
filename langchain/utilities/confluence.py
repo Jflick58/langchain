@@ -22,6 +22,10 @@ class ConfluenceAPIWrapper(BaseModel):
     oauth2: Optional[dict] = {}
     cloud: Optional[bool] = True
     confluence_doc_loader_kwargs: Optional[dict] = {}
+    vectorstore: Optional[object] = None
+    embeddings: Optional[object] = None
+
+    
 
     operations: List[Dict] = [
         {
